@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Biologia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="scoreboard"></div>
+
+<!-- TELA INICIAL -->
+<div id="start-screen" class="container">
+  <h1>Quiz de Biologia 🧬</h1>
+  <button onclick="startGame()">Jogar</button>
+</div>
+
+<!-- MENU DE PERGUNTAS -->
+<div id="menu-screen" class="container hidden">
+  <h1>Escolha a Pergunta</h1>
+  <div id="question-list"></div>
+</div>
+
+<!-- TELA DA PERGUNTA -->
+<div id="game-screen" class="container hidden">
+  <h2 id="question-title"></h2>
+  <div id="timer">⏱ 60</div>
+
+<div id="feedback" class="hidden"></div>
+
+  <!-- IMAGEM -->
+  <img id="question-image" class="hidden">
+
+  <!-- PERGUNTA -->
+  <div class="question" id="question"></div>
+
+  <!-- RESPOSTAS -->
+  <div class="answers" id="answers"></div>
+
+  <button id="next-btn" class="hidden" onclick="nextTurn()">Próxima</button>
+  <!-- PLACAR -->
+  <div id="info"></div>
+  <div id="progress-container">
+  <div id="progress-bar"></div>
+</div>
+
+
+  <!-- VOLTAR -->
+  <button onclick="backToMenu()">Voltar</button>
+</div>
+
+<!-- TELA FINAL -->
+<div id="end-screen" class="container hidden">
+  <h1>🏆 Ranking Final</h1>
+  <div id="ranking"></div>
+  <button onclick="location.reload()">Reiniciar</button>
+</div>
+<audio id="win-sound" src="duolingo-completed-lesson.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
