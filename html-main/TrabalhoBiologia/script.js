@@ -220,10 +220,10 @@ function startGame() {
 function startTimer(difficulty) {
   clearInterval(timerInterval);
 
-  // ⏱ tempo por dificuldade COM ACENTO
-  if (difficulty === "fácil") timeLeft = 15;
-  if (difficulty === "médio") timeLeft = 20;
-  if (difficulty === "difícil") timeLeft = 25;
+  // ⏱ tempo por dificuldade
+  if (difficulty === "fácil") timeLeft = 60;
+  if (difficulty === "médio") timeLeft = 60;
+  if (difficulty === "difícil") timeLeft = 60;
 
   const timerEl = document.getElementById("timer");
   timerEl.innerText = `⏱ ${timeLeft}s`;
